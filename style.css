@@ -1,53 +1,4 @@
-html {
-	background-color: #C6B08F;
-	
-}
-
-
-.presentation{
-	margin-top:7vh;
-	/*background-color:yellow;*/
-
-
-}
-
-p[class=presentation]{
-	
-	color:#1808CB;
-	font-family: 'Arimo', sans-serif;;
-	font-size : 1.2em;
-	line-height: 1.2em ;
-	font-weight : normal;
-	margin:auto;
-	width:50%;
-	text-align:center;
-
-}
-
-p {
-	
-	color:#1808CB;
-	font-family: 'Arimo', sans-serif;;
-	font-size : 1em;
-	line-height: 1.2em ;
-	font-weight : normal;
-	text-align:center;
-}
-
-
-
-
-img {
-	width :50%;
-	margin-left:22vw;
-}                                 
-
-
-
-
-
-
-/*/*
+/*
 
 ████████╗██╗   ██╗██████╗  ██████╗ 
 ╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔═══██╗
@@ -57,6 +8,22 @@ img {
    ╚═╝      ╚═╝   ╚═╝      ╚═════╝ 
                                    
 */
+  
+
+@font-face {
+    font-family : Ronzino;
+    src: url(font/ronzino-regular.otf);
+}
+
+@font-face {
+    font-family : Ronzino;
+    src: url(font/ronzino-oblique.otf);
+}
+
+@font-face {
+    font-family : Ronzino;
+    src: url(font/ronzino-bold.otf);
+}
 
 
 
@@ -70,26 +37,17 @@ figcaption {
 }
 
 
-[id=logo] {
-	font-family: 'Arima Madurai', cursive;
-	font-size : 0.72em;
-	line-height: 0em;
-	cursor: pointer;
-	display:flex;
 
+p {
+	font-family: 'Ronzino', sans-serif;;
+	/* font-size : 5%; */
+	/* line-height: 1.2em ; */
 
 }
 
-/*p {
-	font-family: 'Arimo', sans-serif;;
-	font-size : 1.2em;
-	line-height: 1.2em ;
-	font-weight : normal;
-}*/
-
 
 nav li {
-	font-family: 'Arimo', sans-serif;;
+	font-family: 'Ronzino', sans-serif;;
 	font-size : 0.95em;
 	/*font-weight: bold;*/
 	line-height: 1.2em ;
@@ -107,7 +65,7 @@ nav li:hover {
 
 
 .sommaire li {
-	font-family: 'Arimo', sans-serif;;
+	font-family: 'Ronzino', sans-serif;;
 	font-size : 0.95em;
 	line-height: 1.4em;
 	list-style-type: none ;
@@ -118,18 +76,41 @@ nav li:hover {
 
 
 .sommaire li a:hover {
-	color: #5955ff;
+	color: #1808CB;
 	
 }
 
 h2 {
 
-	font-family: 'Arima Madurai', cursive;
+	font-family: 'Ronzino', cursive;
 	font-size : 1.2em;
 	line-height: 0.1em;
 	text-decoration: none ;
 }
 
+h3 {
+
+	font-family: 'Ronzino', cursive;
+	font-size : 1.1em;
+	line-height: 0.1em;
+	font-weight: bold;
+	width: 55%;
+	margin-left:7.5%;
+	margin-top: 1.5vh;
+	padding-top: 0vh 
+}
+
+h4 {
+
+	font-family: 'Ronzino', cursive;
+	font-size : 0.9em;
+	line-height: 1.2em;
+	font-weight: italic;
+	width: 55%;
+	margin-left:7.5%;
+	margin-top: 1.5vh;
+	padding-top: 0vh;
+}
 
 
 /*
@@ -144,10 +125,10 @@ h2 {
 */
 
 
-/*html {
+html {
 	width:100%;
 	height:100%;
-}*/
+}
 
 
 body {
@@ -177,38 +158,29 @@ header
 
 }
 
-header [id=logo] 
-{
-	width: 200px;
-	height: 4vh;
+
+
+.presentation {
+	/* width: 200px; */
+	height: 9.5vh;
 	margin-left: 0vw;
 	margin-top: -2vh;
 	padding-top: 2vh;
-	/*background-color: red;
-	border: 1px solid black;*/
-	position: absolute;
-	
-
-
+	/* background-color: red;
+	border: 1px solid black; */
 }
 
 
-header [id=logo] h1 {
-	margin-top: 0%;
-	display: flex;
-	text-align:left;
-	line-height: 110%;
-	padding-top:0%;
-}
 
 
 nav {
 
 	width: 40%;
 	height: 3vh;
-	margin-left: 58%;
-	/*background-color: yellow;
-	border: 1px solid blue;*/
+	margin-left: 38%;
+	margin-top:2vh;
+	/* background-color: yellow;
+	border: 1px solid blue; */
 	
 
 }
@@ -296,22 +268,6 @@ nav ul li {
 }
 
 
-.sommaire__illu {
-    
-  	/*border: 1px solid blue;*/
-  	left:-20px;
-
-}
-
-.sommaire__illu ul {
-  
-  	
-  	/*border: 1px solid green;*/
-  	padding-left: 0px;
-  	margin-top: 5vh;
-  	
-
-}
 
 
 .projet {
@@ -356,45 +312,44 @@ nav ul li {
 
 .projet__texte  {
 
-	font-size: 0.75em;
-	line-height: 1.35em;
+	font-size: 0.9em;
+	line-height: 1.4em;
 	/*border: 1px solid black;*/
 	width: 55%;
 	margin-left:7.5%;
 	margin-top: 1.5vh;
-	padding-top: 0vh ; 
+	padding-top: 0vh ;
+
 
 }  
 
 
 
-.apropos {
-	margin:auto;
-	width:91.5vw;
-	margin-top:10vh;
-	/*border:1px solid red;
-	background-color:blue;*/
-}
 
+
+[id=apropos] {
+
+	background-color:#C6B08F;
+}
 
 .apropos__div {
 
 	width:66vw;
-	margin-top:20vh;
+	margin-top:21vh;
 	margin-left: 10vw;
-	margin-bottom: 20vh;
-	/*height:65vh;*/
-	/*border:1px solid yellow;
-	background-color:yellow;*/
+	height:65vh;
+	 /* border:1px solid yellow;
+	background-color:yellow; */
 }
 
  .apropos__div p {
 
-	font-family: 'Arimo', sans-serif;;
-	font-size :0.92em;
-	line-height: 1.5em;
+	font-family: 'Ronzino', sans-serif;;
+	font-size :1.3em;
+	line-height: 1.3em;
 	list-style-type: none ;
 	text-decoration: none ;
+	font-weight: regular;
 	color:black;
 	
 }
@@ -415,12 +370,12 @@ nav ul li {
 	}
 
 #mail2 {
-	color: #5955ff;
+	color: #1808CB;
 }
 
 
 strong {
-	font-family: 'Arimo', sans-serif;;
+	font-family: 'Ronzino', sans-serif;;
 	font-size : 1em;
 	line-height: 1.2em ;
 	font-weight : normal;
@@ -441,27 +396,22 @@ strong {
 */
 
 
-/*footer {
+footer {
 	width: 95%;
 	height: 2.5%;
-	background-color: blue;
-	border: 1px solid green;
-	margin:auto;
+	
 	display:flex;
-	position:absolute;
-	margin-left:1.40vw;
-	margin-top: 1.9vh;
+
 
 	}
 
 
 footer p {
-	margin:auto;
 	margin-left:78vw;
 	font-size: 0.6em;
-	margin-top:0px;
+	margin-bottom:0px;
 
-}	*/
+}	
 
 
 
@@ -606,7 +556,7 @@ nav ul li [id=mail] {
 
 .projet__texte  {
 
-	font-size: 0.75em;
+	font-size: 0.90em;
 	line-height: 1.35em;
 	/*border: 1px solid black;*/
 	width: 85%;
@@ -638,18 +588,17 @@ nav ul li [id=mail] {
 
 } 
 
-
-/*footer {
+footer {
 	width: 95%;
 	height: 2.5%;
-	background-color: blue;
-	border: 1px solid green;
-	margin:auto;
+	/* background-color: blue;
+	border: 1px solid green; */
+	margin:auto; 
 	display:flex;
-	position:absolute;
-	margin-top: 0vh;
+    /* position:absolute; */
+	margin-top: 40vh;
 
-	}*/
+	} 
 
 
 .apropos {
@@ -686,7 +635,7 @@ p .apropos__texte {
 } /*fermeture media 1*/
 
 
-/* 320 -> 767 */
+320 -> 767
 @media (min-width: 600px) and (max-width: 900px) {
      
      body{
@@ -744,12 +693,12 @@ h2 {
 	text-decoration: none ;
 }
 
-/*footer p {
+footer p {
 
 	font-size: 0.55em;
 	margin-left:75vw;
 
-}	*/
+}	
 
 
 nav {
@@ -874,24 +823,11 @@ nav {
 
 } /*fermeture media 4*/
 
-/* 768 ->  */
-@media (min-width: 1201px) {
 
-	body{
 
-		/*background-color: pink;*/
-	}
 
-#conversation  {
 
-	font-size: 0.75em;
-	/*border: 1px solid black;*/
-	width: 55%;
-	margin-left:7.5%;
-	margin-top: 3vh;
-	padding-top: 0vh ;
 
-  
-}
 
+ 
 
